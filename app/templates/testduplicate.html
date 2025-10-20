@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>SD Kort</title>
+<link rel="stylesheet" href="../style/Style.css">
+<link rel="icon" type="image/x-icon" href="../static/img/">
+{% endblock %}
+
+<!-- <head>
+  <meta charset="UTF-8">
+  <title>Duplicate Div Example</title>
+  <style>
+    .box {
+      border: 2px solid #333;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head> -->
+
+{% block body %}
+<h1>Duplicate Div Example</h1>
+
+<!-- The div you want to duplicate -->
+<div id="box-template">
+    <p>This is a box to duplicate.</p>
+</div>
+
+<!-- Container for duplicated divs -->
+<div id="main"></div>
+
+<!-- Button to duplicate -->
+<button id="duplicate-btn">Duplicate Box</button>
+{% endblock %}
+
+</html>

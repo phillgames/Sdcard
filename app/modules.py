@@ -1,8 +1,16 @@
 import sqlite3
+from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import UserMixin
+from datetime import datetime
 
 bcrypt = Bcrypt()
+db = SQLAlchemy()
+
+# class User(db.Model, usermixin):
+#     __tablename__ = 'users'
+
+#     id = db.Column(db.Integer, p)
 
 # Database connection function
 def get_db_connection():

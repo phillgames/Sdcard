@@ -30,12 +30,39 @@ body {
 
 }
 
-.main {
+.person {
     background-color: rgba(153, 153, 153, 0.447);
     display: flex;
     flex-direction: row;
     justify-content: center;
     
+}
+
+.deliver {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 1vw;
+}
+
+.sdgroup {
+    display: flex;
+}
+
+.sd {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 1vw;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 1vw;
 }
 
 .footer{

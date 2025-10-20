@@ -14,46 +14,64 @@
                 <h3>Home</h3>
             </div>
         </a>
-        <div class="menu, button">
+        <div onclick="testoutput()" class="menu, button">
             <h3>Menu</h3>
         </div>
     </div>
-    <div class="main">
-        <div class="deliver">
-            <p>
-                Levert
-            </p>
-            <input type="checkbox">
-        </div>
-        <div class="user">
-            <p>
-                Bruker
-            </p>
-            <input type="text">
-        </div>
-        <div class="32">
-            <p>
-                32GB
-            </p>
-            <input type="checkbox">
-        </div>
-        <div class="64">
-            <p>
-                64GB
-            </p>
-            <input type="checkbox">
-        </div>
-        <div class="date">
-            <p>
-            </p>
-            <input type="number">
-        </div>
+    <div id="main" class="main">
+        <button id="duplicate-btn">New example</button>
 
+        <div id="dupe" class="person">
 
+            <div class="deliver">
+                <p>
+                    Levert
+                </p>
+                <input type="checkbox" class="remove-check">
+            </div>
+            <div class="user">
+                <p>
+                    Bruker
+                </p>
+                <input type="text">
+            </div>
+            <div class="sdgroup">
+                <div class="sd">
+                    <p>
+                        32GB
+                    </p>
+                    <input type="checkbox">
+                </div>
+                <div class="sd">
+                    <p>
+                        64GB
+                    </p>
+                    <input type="checkbox">
+                </div>
+                <div class="sd">
+                    <p>
+                        128GB
+                    </p>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="date">
+                <p>
+                    Dato
+                </p>
+                <input type="date">
+            </div>
+        </div>
+            
     </div>
+    <script type="text/template" id="code-template">
+        <div class="code-block">
+            <pre><code>console.log("Hello, World!");</code></pre>
+            <button class="duplicate-btn">Duplicate</button>
+        </div>
+    </script>
     <div class="footer">
 
     </div>
 </div>
-<script src="../script/script.js"></script>
 {% endblock %}
