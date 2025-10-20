@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>SD Kort</title>
+<link rel="stylesheet" href="../style/Style.css">
+<link rel="icon" type="image/x-icon" href="../img/SD_Card_16GB.png">
+{% endblock %}
+
+{% block body %}
+<div class="mainmanager">
+    <div class="header">
+        <a href="">
+            <div class="button">
+                <h3>Home</h3>
+            </div>
+        </a>
+        <div class="menu, button">
+            <h3>Menu</h3>
+        </div>
+    </div>
+    <div class="main">
+        <div class="deliver">
+            <p>
+                Levert
+            </p>
+            <input type="checkbox">
+        </div>
+        <div class="user">
+            <p>
+                Bruker
+            </p>
+            <input type="text">
+        </div>
+        <div class="32">
+            <p>
+                32GB
+            </p>
+            <input type="checkbox">
+        </div>
+        <div class="64">
+            <p>
+                64GB
+            </p>
+            <input type="checkbox">
+        </div>
+        <div class="date">
+            <p>
+            </p>
+            <input type="number">
+        </div>
+
+
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+<script src="../script/script.js"></script>
+{% endblock %}
