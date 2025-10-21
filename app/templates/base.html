@@ -1,28 +1,31 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/SD_Card_16GB') }}">
     {% block head %}{% endblock %}
 </head>
+
 <body>
-{% block body %}
-<div class="mainmanager">
-    <div class="header">
-        <a href="">
-            <div class="button">
-                <h3>Home</h3>
+    {% block body %}
+    <div class="mainmanager">
+        <div class="header">
+            <a href="">
+                <div class="button">
+                    <h3>Home</h3>
+                </div>
+            </a>
+            <div onclick="testoutput()" class="menu, button">
+                <h3>Menu</h3>
             </div>
-        </a>
-        <div onclick="testoutput()" class="menu, button">
-            <h3>Menu</h3>
+        </div>
+        <div class="footer">
+
         </div>
     </div>
-    <div class="footer">
-
-    </div>
-</div>
-{% endblock %}
+    {% endblock %}
 </body>
+
 </html>

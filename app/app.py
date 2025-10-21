@@ -24,6 +24,10 @@ def index():
 def dupe():
     return render_template('testduplicate.html')
 
+@app.route('/log')
+def log():
+    return render_template('Log.html')
+
 @app.route('/dashboard')
 @login_required
 def dashboard():

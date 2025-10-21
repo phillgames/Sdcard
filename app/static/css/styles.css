@@ -6,7 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
 }
 
@@ -26,13 +26,21 @@ body {
     border-radius: 10px;
     line-height: 0%;
     padding-inline: 10px;
-    
+    background-color: none;
+    color: white;
+    cursor: pointer;
+    margin-inline: 1vw;
 }
 
 #nolink {
     
     text-decoration: none;
     color: white;
+}
+
+#dupe {
+    display: flex;
+    margin-inline-start: 1vw;
 }
 
 .person {
@@ -47,6 +55,11 @@ body {
 .deliver {
     display: flex;
     flex-direction: column;
+}
+
+#duplicate-btn {
+    all: unset;
+    display: inline-block;
 }
 
 .user {

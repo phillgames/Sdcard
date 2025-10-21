@@ -2,7 +2,6 @@
 
 {% block head %}
 <title>SD Kort</title>
-<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 {% endblock %}
 
 {% block body %}
@@ -13,19 +12,31 @@
                 <h3>Refresh</h3>
             </div>
         </a>
-        <div onclick="testoutput()" class="menu button">
-            <h3>Menu</h3>
-        </div>
+        <button id="duplicate-btn">
+            <div class="button">
+                <p>
+                    New example
+                </p>
+            </div>
+        </button>
+        <a href="log">
+            <div class="menu button">
+                <h3>Menu</h3>
+            </div>
+        </a>
     </div>
 
     <div id="main" class="main">
-        <button id="duplicate-btn">New example</button>
 
         <!-- Original hidden template -->
         <div id="dupe" class="person" style="display:none">
 
-            <div class="deliver">
+            <!-- <div class="deliver">
                 <p>Levert</p>
+                <input type="checkbox" class="delivered-check" name="delivered">
+            </div> -->
+            <div class="deliver">
+                <p>Ferdig</p>
                 <input type="checkbox" class="remove-check" name="remove">
             </div>
 
@@ -58,6 +69,5 @@
 
     </div>
 
-    <div class="footer"></div>
-</div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 {% endblock %}
