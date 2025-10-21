@@ -1,0 +1,13 @@
+CREATE USER 'Lucas'@'%' IDENTIFIED BY 'lucaspass';
+GRANT ALL PRIVILEGES ON test.* TO 'Lucas'@'%';
+FLUSH PRIVILEGES;
+
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'geir'@'%';
+
+CREATE USER 'jshater'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON jsnolike.* TO 'jshater'@'%';
+FLUSH PRIVILEGES;
+
+CREATE USER 'yomama'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON home.* TO 'yomama'@'%';
+FLUSH PRIVILEGES;
