@@ -32,6 +32,11 @@ body {
     margin-inline: 1vw;
 }
 
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 #nolink {
     
     text-decoration: none;
